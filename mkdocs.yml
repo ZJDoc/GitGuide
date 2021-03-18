@@ -50,3 +50,4 @@ nav:
         - '[gitmessage]提交模板': message/gitmessage.md
         - 'Conventional提交规范': message/conventional-commit.md
         - 'Angular提交规范': message/angular-commit.md
+      - VERSION: version/semver.md
