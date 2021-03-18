@@ -38,3 +38,8 @@ extra_javascript:
 # 导航
 nav:
     - Home: index.md
+    - 规范:
+      - README:
+        - 引言: readme/index.md
+        - '[译]规范': readme/译-规范.md
+        - '徽章': readme/badge.md
