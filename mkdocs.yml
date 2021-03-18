@@ -39,9 +39,14 @@ extra_javascript:
 nav:
     - Home: index.md
     - 规范:
+      - GIT工作流: workflow/index.md
       - README:
         - 引言: readme/index.md
         - '[译]规范': readme/译-规范.md
         - '徽章': readme/badge.md
         - 后记: readme/postscript.md
-      - GIT工作流: workflow/index.md
+      - MESSAGE:
+        - 引言: message/index.md
+        - '[gitmessage]提交模板': message/gitmessage.md
+        - 'Conventional提交规范': message/conventional-commit.md
+        - 'Angular提交规范': message/angular-commit.md
