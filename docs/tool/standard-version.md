@@ -1,23 +1,9 @@
 
-# [standard-version]版本自动化及CHANGELOG生成
-
-参考：
-
-[conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
-
-[Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords)
-
-[如何维护更新日志](https://keepachangelog.com/zh-CN/1.0.0/)
-
-## conventioanl-changelog
-
-参考：
-
-[conventional-changelog-cli](https://www.cnblogs.com/zivxiaowei/p/10089201.html)
+# 版本自动化及CHANGELOG生成
 
 使用工具[conventional-changelog](https://www.npmjs.com/package/conventional-changelog)进行`CHANGELOG`文件的自动生成
 
-### 安装
+## 安装
 
 全局安装:
 
@@ -25,7 +11,7 @@
 $ npm install -g conventional-changelog-cli
 ```
 
-### 使用
+## 使用
 
 基本使用命令如下：
 
@@ -47,9 +33,7 @@ $ conventional-changelog -p angular -i CHANGELOG.md -s -r 0
 
 * 参数`-r`默认为`1`，设为`0`将重新生成所有版本的变更信息
 
-### 快捷方式
-
-参考：[五、生成 Change log](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)
+## 快捷方式
 
 在工程`package.json`中加入以下脚本
 
@@ -66,3 +50,15 @@ $ conventional-changelog -p angular -i CHANGELOG.md -s -r 0
 ```
 $ npm run changelog
 ```
+
+## 相关阅读
+
+* [conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
+
+* [Closing issues using keywords](https://help.github.com/en/articles/closing-issues-using-keywords)
+
+* [如何维护更新日志](https://keepachangelog.com/zh-CN/1.0.0/)
+
+* [conventional-changelog-cli](https://www.cnblogs.com/zivxiaowei/p/10089201.html)
+
+* [五、生成 Change log](http://www.ruanyifeng.com/blog/2016/01/commit_message_change_log.html)

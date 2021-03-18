@@ -77,3 +77,7 @@ nav:
           - 远程分支替换本地分支: git/advanced/远程分支替换本地分支.md
           - 为每个项目单独设置用户名和邮箱: git/advanced/为每个项目单独设置用户名和邮箱.md
         - ERROR: git/error.md
+      -  '[Commitizen]消息提交': tool/commitizen.md
+      - '[CommitLint][Husky]消息校验': tool/commitlint-husky.md
+      - README生成器: tool/generator-standard-readme.md
+      - '版本自动化及CHANGELOG生成': tool/standard-version.md

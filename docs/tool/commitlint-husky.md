@@ -1,7 +1,5 @@
 
-# [CommitLint][Husky]消息校验工具
-
-参考：[commitlint](https://conventional-changelog.github.io/commitlint/#/)
+# [CommitLint][Husky]消息校验
 
 使用`commitizen`可以规范化提交信息，同样的，可以设置工具来检查提交信息是否符合格式要求
 
@@ -123,3 +121,7 @@
     language: node_js
     script:
         - commitlint-travis
+
+## 相关阅读
+
+* [commitlint](https://conventional-changelog.github.io/commitlint/#/)

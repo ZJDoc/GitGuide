@@ -1,18 +1,18 @@
 
-# [Commitizen]信息交互工具
+# [Commitizen]信息提交
 
 [Commitizen](http://commitizen.github.io/cz-cli/)是一个提交日志工具，辅助开发者使用提交规则
 
 ## 预配置
 
-需要安装`NodeJS`，参考：[nodeJS安装](https://hexo-guide.readthedocs.io/zh_CN/latest/node/nodeJS%E5%AE%89%E8%A3%85.html)
+* 安装`NodeJS`
 
-## 安装`Commitizen`
+## 安装Commitizen
 
     # 全局安装
     $ npm install -g commitizen
 
-## 安装`Adapter`
+## 安装Adapter
 
 `Commitizen`支持多种不同的提交规范，可以安装和配置不同的适配器实现
 
