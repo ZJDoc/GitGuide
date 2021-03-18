@@ -51,3 +51,17 @@ nav:
         - 'Conventional提交规范': message/conventional-commit.md
         - 'Angular提交规范': message/angular-commit.md
       - VERSION: version/semver.md
+    - 工具:
+      - Git:
+        - 引言: git/index.md
+        - Base:
+          - 关于版本控制: git/base/关于版本控制.md
+          - 工作区域: git/base/工作区域.md
+          - '[git config]配置': git/base/git-config.md
+          - 获取git仓库: git/base/获取git仓库.md
+          - 提交新版本: git/base/提交新版本.md
+          - '[git log]日志查询': git/base/git-log.md
+          - 标签设置: git/base/标签设置.md
+          - '.gitkeep': git/base/gitkeep.md
+          - 子模块: git/base/子模块.md
+          - '[ssh][http]传输方式切换': git/base/ssh-http-传输方式切换.md
