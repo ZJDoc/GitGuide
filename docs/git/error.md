@@ -134,3 +134,53 @@ $ git config --global http.postBuffer 524288000
 
 1. 先将`Github`仓库拉取到码云仓库
 2. 在从码云上下载
+
+## 问题六：fatal: 无法读取远程仓库。
+
+```
+$ git clone ssh://git@gitlab.zhujian.tech:7020/zjykzj/hexo-blog.git
+正克隆到 'hexo-blog'...
+remote: 
+remote: ========================================================================
+remote: 
+remote: The project you were looking for could not be found.
+remote: 
+remote: ========================================================================
+remote: 
+fatal: 无法读取远程仓库。
+
+请确认您有正确的访问权限并且仓库存在。
+```
+
+参考：[How to fix 'The project you were looking for could not be found' when using git clone](https://stackoverflow.com/questions/54571213/how-to-fix-the-project-you-were-looking-for-could-not-be-found-when-using-git)
+
+添加私钥
+
+```
+eval "$(ssh-agent -s)"
+
+ssh-add ~/.ssh/<id_rsa>
+```
+
+## 问题七：fatal: 无法读取远程仓库。
+
+```
+$ git push origin master 
+ssh: connect to host ssh.github.com port 443: Connection timed out
+fatal: 无法读取远程仓库。
+
+请确认您有正确的访问权限并且仓库存在。
+```
+
+1. 激活私钥
+2. 测试远程登录
+3. 代理（推荐）
+
+参考：[git上传代码报错ssh: connect to host github.com port 22: Connection timed out解决办法](https://blog.csdn.net/qq_42146613/article/details/82772734)
+
+## 问题八：gnutls_handshake() failed: Error in the pull function
+
+参考：[使用curl出现gnutls_handshake() failed: Error in the pull function或者GnuTLS recv error: Error in the pull](https://blog.csdn.net/anlian523/article/details/90729063)
+
+* 方法一：`sudo apt-get install libcurl4-openssl-dev`
+* 方法二：开启代理（推荐）
