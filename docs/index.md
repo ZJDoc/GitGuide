@@ -4,6 +4,7 @@
     * README编写
     * 消息提交
     * 版本提交
+    * GIT工作流
 * 工具
     * Git
     * Commitizen
