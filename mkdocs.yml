@@ -54,7 +54,7 @@ nav:
     - 工具:
       - Git:
         - 引言: git/index.md
-        - Base:
+        - 入门:
           - 关于版本控制: git/base/关于版本控制.md
           - 工作区域: git/base/工作区域.md
           - '[git config]配置': git/base/git-config.md
@@ -65,3 +65,15 @@ nav:
           - '.gitkeep': git/base/gitkeep.md
           - 子模块: git/base/子模块.md
           - '[ssh][http]传输方式切换': git/base/ssh-http-传输方式切换.md
+        - 进阶:
+          - 绘制分支图: git/advanced/绘制分支图.md
+          - 创建裸仓库: git/advanced/创建裸仓库.md
+          - 工作目录和裸仓库分离: git/advanced/工作目录和裸仓库分离.md
+          - 自建服务器: git/advanced/自建服务器.md
+          - 推送到多个远程托管服务器: git/advanced/推送到多个远程托管服务器.md
+          - 本地分支操作: git/advanced/本地分支操作.md
+          - 远程分支操作: git/advanced/远程分支操作.md
+          - 拉取指定远程分支到本地: git/advanced/拉取指定远程分支到本地.md
+          - 远程分支替换本地分支: git/advanced/远程分支替换本地分支.md
+          - 为每个项目单独设置用户名和邮箱: git/advanced/为每个项目单独设置用户名和邮箱.md
+        - ERROR: git/error.md
