@@ -43,3 +43,5 @@ nav:
         - 引言: readme/index.md
         - '[译]规范': readme/译-规范.md
         - '徽章': readme/badge.md
+        - 后记: readme/postscript.md
+      # - GIT工作流: workflow/index.md
