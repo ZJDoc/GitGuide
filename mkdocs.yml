@@ -82,7 +82,6 @@ nav:
       - README生成器: tool/generator-standard-readme.md
       - '版本自动化及CHANGELOG生成': tool/standard-version.md
     - 平台:
-      - 代码库大小限制: platform/代码库大小限制.md
       - SSH公钥设置: platform/SSH公钥设置.md
       - GitLab:
         - 安装: platform/gitlab-安装.md
