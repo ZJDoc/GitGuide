@@ -1,5 +1,5 @@
 
-# [GitLab][nginx]反向代理
+# Nginx反向代理
 
 当前`gitlab`登录路径是`localhost:8080`
 

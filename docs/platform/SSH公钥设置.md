@@ -1,9 +1,7 @@
 
-# [github][gitee]SSH公钥设置
+# SSH公钥设置
 
-## [github]公钥设置
-
-参考：[Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+## Github公钥设置
 
 登录`github`，进入个人主页，选择`Settings->SSH and GPG keys->New SSH key`
 
@@ -16,19 +14,11 @@
 
 ### 密钥失效
 
-参考：[About SSH](https://help.github.com/articles/about-ssh/)
-
     If you haven't used your SSH key for a year, then GitHub will automatically delete your inactive SSH key as a security precaution. For more information, see "Deleted or missing SSH keys."
 
-`github`规定自动删除一年内未使用的`SSH`密钥
+[Github About SSH](https://help.github.com/articles/about-ssh/)规定自动删除一年内未使用的`SSH`密钥
 
-## [gitee]公钥设置
-
-参考：
-
-[公钥管理](https://gitee.com/help/articles/4180)
-
-[SSH 公钥设置](https://gitee.com/help/articles/4191#article-header0)
+## Gitee公钥设置
 
 码云可以在个人主页上设置公钥，也可以在个人仓库上设置公钥，这两个地方的读写权限不一致
 
@@ -45,8 +35,6 @@
 在个人仓库上设置的公钥仅具备`拉取仓库代码`的功能
 
 ## 测试
-
-参考：[Testing your SSH connection](https://help.github.com/articles/testing-your-ssh-connection/)
 
 在`github`上设置好公钥之后
 
@@ -68,3 +56,10 @@
     $ git clone git@github.com:zjZSTU/git-guide.git
 
 这一次会要求你输入设置好的密码(`passphrase`)，之后的拉取代码操作都可以自动认证完成
+
+## 相关阅读
+
+* [GitHub Adding a new SSH key to your GitHub account](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+* [GitHub Testing your SSH connection](https://help.github.com/articles/testing-your-ssh-connection/)
+* [Gitee 公钥管理](https://gitee.com/help/articles/4180)
+* [Gitee SSH 公钥设置](https://gitee.com/help/articles/4191#article-header0)

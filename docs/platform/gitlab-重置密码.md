@@ -1,11 +1,7 @@
 
-# [GitLab]重置密码
+# 重置密码
 
-昨天新建的账户，今天突然等不上去了，参考以下文章重置密码
-
-[gitlab 重置用户密码](https://blog.csdn.net/shanpenghui/article/details/89195511)
-
-[gitlab管理员密码忘记如何强制重置找回](https://jingyan.baidu.com/article/6525d4b181bd41ac7d2e94af.html)
+昨天新建的账户，今天突然等不上去了，重置密码
 
 进入`gitlab`管理后台。当前使用`docker`版本`gitlab`，所以先进入容器
 
@@ -61,3 +57,9 @@ Enqueued ActionMailer::DeliveryJob (Job ID: 2b220e18-d0ac-415e-a1cc-52f31069d3be
 => true
 irb(main):008:0> quit
 ```
+
+## 相关阅读
+
+* [gitlab 重置用户密码](https://blog.csdn.net/shanpenghui/article/details/89195511)
+
+* [gitlab管理员密码忘记如何强制重置找回](https://jingyan.baidu.com/article/6525d4b181bd41ac7d2e94af.html)

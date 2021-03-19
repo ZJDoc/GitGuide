@@ -3,9 +3,7 @@
 
 ## 硬件配置
 
-参考：[Requirements](https://docs.gitlab.com/ce/install/requirements.html#hardware-requirements)
-
-官方推荐的硬件配置为：
+[官方推荐]((https://docs.gitlab.com/ce/install/requirements.html#hardware-requirements))的硬件配置为：
 
 1. `2 cores CPU`
 2. `8GB RAM`
@@ -85,7 +83,7 @@ https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/README.md
 
 ## 系统配置
 
-打开文件`/etc/gitlab/gitlab.rb`，修改external_url为自己的地址
+打开文件`/etc/gitlab/gitlab.rb`，修改`external_url`为自己的地址
 
 ```
 $ sudo cat /etc/gitlab/gitlab.rb | grep external_url
@@ -99,7 +97,7 @@ external_url 'http://localhost:8800'
 ...
 ```
 
-重新进行gitlab配置
+重新进行`gitlab`配置
 
 ```
 $ sudo gitlab-ctl reconfigure

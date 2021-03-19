@@ -1,13 +1,11 @@
 
-# [github]DNS加速
+# DNS加速
 
 ## 加速原理
 
 通过在本地域名文件中加入`github`相关网站的`DNS`地址，加快`DNS`解析过程，从而加快网页加载速度
 
 ## 方式一
-
-参考：[加快国内访问Github网站的速度](https://aoenian.github.io/2018/05/12/github-access-fast/)
 
 登录[DNS查询](http://tool.chinaz.com/dns/?type=1&host=github.com&ip=)网站进行查询
 
@@ -35,4 +33,9 @@ $ cat /etc/hosts
 
 ## 方式二（推荐）
 
-配置公告`DNS`，参考[[Ubuntu 18.04][resolv.conf]公共DNS设置](https://zj-network-guide.readthedocs.io/zh_CN/latest/advanced/[Ubuntu%2018.04][resolv.conf]%E5%85%AC%E5%85%B1DNS%E8%AE%BE%E7%BD%AE/)
+配置公共`DNS`，比如`DNSPod、阿里云DNS、Google DNS`
+
+## 相关阅读
+
+* [加快国内访问Github网站的速度](https://aoenian.github.io/2018/05/12/github-access-fast/)
+* [[Ubuntu 18.04][resolv.conf]公共DNS设置](https://zj-network-guide.readthedocs.io/zh_CN/latest/advanced/[Ubuntu%2018.04][resolv.conf]%E5%85%AC%E5%85%B1DNS%E8%AE%BE%E7%BD%AE/)

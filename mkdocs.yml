@@ -81,3 +81,17 @@ nav:
       - '[CommitLint][Husky]消息校验': tool/commitlint-husky.md
       - README生成器: tool/generator-standard-readme.md
       - '版本自动化及CHANGELOG生成': tool/standard-version.md
+    - 平台:
+      - 代码库大小限制: platform/代码库大小限制.md
+      - SSH公钥设置: platform/SSH公钥设置.md
+      - GitLab:
+        - 安装: platform/gitlab-安装.md
+        - 命令行操作: platform/gitlab-命令行操作.md
+        - Docker部署: platform/gitlab-docker部署.md
+        - Nginx反向代理: platform/gitlab-nginx反向代理.md
+        - 重置密码: platform/gitlab-重置密码.md
+      - GitHub:
+        - 版本发布: platform/github-版本发布.md
+        - DNS加速: platform/github-DNS加速.md
+        - 主页美化: platform/github-主页美化.md
+      - ERROR: platform/error.md

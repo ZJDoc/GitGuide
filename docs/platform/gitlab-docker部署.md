@@ -1,15 +1,5 @@
 
-# [Docker]GitLab使用
-
-参考：
-
-[GitLab Docker images](https://docs.gitlab.com/omnibus/docker/)
-
-[gitlab docker Web界面打开反应迟钝的解决办法](https://blog.csdn.net/happyfreeangel/article/details/88653846)
-
-[GitLab Docker 容器的内存优化之路](https://www.imooc.com/article/48668)
-
-[gitlab的docker安装,非标准端口，如何处理？](https://www.cnblogs.com/aguncn/p/10336175.html)
+# Docker部署
 
 `gitlab`提供了官方镜像 - [gitlab/gitlab-ce](https://hub.docker.com/r/gitlab/gitlab-ce/)
 
@@ -110,3 +100,13 @@ Chef Client failed. 0 resources updated in 01 seconds
 1. 停止`gitlab`容器
 2. 修改配置文件（在主机中）`/srv/gitlab/config/gitlab.rb`
 3. 重新启动容器
+
+## 相关阅读
+
+[GitLab Docker images](https://docs.gitlab.com/omnibus/docker/)
+
+[gitlab docker Web界面打开反应迟钝的解决办法](https://blog.csdn.net/happyfreeangel/article/details/88653846)
+
+[GitLab Docker 容器的内存优化之路](https://www.imooc.com/article/48668)
+
+[gitlab的docker安装,非标准端口，如何处理？](https://www.cnblogs.com/aguncn/p/10336175.html)
