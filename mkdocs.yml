@@ -93,4 +93,4 @@ nav:
         - 版本发布: platform/github-版本发布.md
         - DNS加速: platform/github-DNS加速.md
         - 主页美化: platform/github-主页美化.md
-    - ERROR: error.md
+    - 问题解答: troubleshooting.md
