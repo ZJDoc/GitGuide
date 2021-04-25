@@ -42,7 +42,7 @@ Chef Client failed. 0 resources updated in 01 seconds
 
 ## 问题二：GitLab导致8080端口冲突
 
-### 问题复现
+* 问题复现
 
 安装完`GitLab`后，修改配置文件`/etc/gitlab/gitlab.rb`
 
@@ -55,7 +55,7 @@ external_url 'http://localhost:8800'
 
 ![](./imgs/8080.png)
 
-### 问题解析
+* 问题解析
 
 查询哪个程序监听了`8080`端口
 
@@ -90,7 +90,7 @@ listen "127.0.0.1:8080", :tcp_nopush => true
 #unicorn['port'] = 8800
 ```
 
-### 解决方案
+* 解决方案
 
 需要在`gitlab.rb`上同时修改`unicorn`监听端口号，修改配置文件`/etc/gitlab/gitlab.rb`如下
 
@@ -167,7 +167,7 @@ GitLab: You are not allowed to force push code to a protected branch on this pro
 
 ## 问题五：unicorn出错
 
-### 问题描述
+* 问题描述
 
 通过`docker`部署`gitlab`一段时间后，突然出现`502`错误
 
@@ -198,7 +198,7 @@ ArgumentError: Already running on PID:460 (or pid=/opt/gitlab/var/unicorn/unicor
 2019-12-18_12:27:47.91735 master failed to start, check stderr log for details
 ```
 
-### 问题解析
+* 问题解析
 
 看样子是`unicorn`的问题，参考：
 
@@ -229,7 +229,7 @@ unicorn['port'] = 8999
 
 ## 问题六：版本更新后database出错
 
-### 问题描述
+* 问题描述
 
 拉取了最新的`Docker Gitlab`镜像，部署时发现了如下错误：
 
@@ -263,7 +263,7 @@ gitlab     | ---- End output of "bash"  "/tmp/chef-script20200618-23-sfpkhu" ---
 gitlab     | Ran "bash"  "/tmp/chef-script20200618-23-sfpkhu" returned 1
 ```
 
-### 问题解决
+* 问题解决
 
 在网上查了一些资料，说是新旧版本的配置格式不一致，需要删除之前的配置数据。幸好在本地保存了之前使用的镜像，打包该镜像后上传到服务器重新加载即可
 
@@ -320,7 +320,7 @@ Host gitee.com
 
 ## 问题九：代码库大小限制
 
-### 问题描述
+* 问题描述
 
 上传代码到`Gitee`时，打印出如下日志：
 
@@ -335,7 +335,7 @@ To gitee.com:zjZSTU/xx.xxx.git
 
 在网上查询发现是因为单个仓库大小超出了限制（`500MB`），经过一番查询发现`Gitee`和`Coding`的个人仓库都限制在`500MB`，`Github`对单个仓库大小的限制为`1GB`。
 
-### 问题解决
+* 问题解决
 
 阿里云的单个仓库限制为`2GB`，能够满足当前需求。
 
@@ -346,15 +346,15 @@ To gitee.com:zjZSTU/xx.xxx.git
 3. [Github](https://github.com/)
 4. [Aliyun Code](https://code.aliyun.com)
 
-### 相关阅读
+* 相关阅读
 
-* [Gitee 仓库体积过大，如何减小？ ](https://gitee.com/help/articles/4232#article-header0)
+[Gitee 仓库体积过大，如何减小？ ](https://gitee.com/help/articles/4232#article-header0)
 
-* [Tencent 仓库大小限制吗？](https://cloud.tencent.com/developer/ask/197652)
+[Tencent 仓库大小限制吗？](https://cloud.tencent.com/developer/ask/197652)
 
-* [GitHub File and repository size limitations](https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota#file-and-repository-size-limitations)
+[GitHub File and repository size limitations](https://help.github.com/en/github/managing-large-files/what-is-my-disk-quota#file-and-repository-size-limitations)
 
-* [Aliyun代码库对文件大小是否有限制？](https://help.aliyun.com/document_detail/153791.html?spm=5176.11065259.1996646101.searchclickresult.30c1183bbCmNS7)
+[Aliyun代码库对文件大小是否有限制？](https://help.aliyun.com/document_detail/153791.html?spm=5176.11065259.1996646101.searchclickresult.30c1183bbCmNS7)
 
 ## 问题十：publickey denied
 
@@ -426,7 +426,7 @@ Creating home directory `/home/zhujian' ...
 
     remote: error: cannot lock ref 'refs/heads/master': ref refs/heads/master
 
-### 起因
+* 起因
 
 我在上传提交时中间中断了
 
@@ -441,7 +441,7 @@ Creating home directory `/home/zhujian' ...
 
 然后再更新文章后再一次提交，就出现了远程仓库锁定的问题
 
-### 解决
+* 解决
 
 参考：[git: error: cannot lock ref, error: cannot lock ref](https://blog.csdn.net/sinat_36246371/article/details/79959598)
 
@@ -455,7 +455,7 @@ Creating home directory `/home/zhujian' ...
 
 ## 问题十四：error: RPC failed; curl 56 GnuTLS recv error (-9)
 
-### 问题描述
+* 问题描述
 
 下载`Github`仓库时出现如下错误
 
@@ -469,7 +469,7 @@ fatal: 过早的文件结束符（EOF）
 fatal: index-pack 失败
 ```
 
-### 解析
+* 解析
 
 参考[git error: RPC failed; curl 56 GnuTLS](https://stackoverflow.com/questions/38378914/git-error-rpc-failed-curl-56-gnutls)和[Git 克隆错误‘RPC failed; curl 56 Recv failure....’ 及克隆速度慢问题解决](https://blog.csdn.net/qq_34121797/article/details/79561110)，有可能是`http缓存不够`或者`网络不稳定`问题
 
@@ -484,7 +484,7 @@ fatal: index-pack 失败
 $ git config --global http.postBuffer 524288000
 ```
 
-### 解决
+* 解决
 
 重新设置了`http`缓存，不过最后是通过码云的方式解决的
 
