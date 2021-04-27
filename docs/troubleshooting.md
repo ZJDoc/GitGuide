@@ -540,3 +540,22 @@ fatal: 无法读取远程仓库。
 
 * 方法一：`sudo apt-get install libcurl4-openssl-dev`
 * 方法二：开启代理（推荐）
+
+## 问题十八：Host key verification failed.
+
+```
++ git push --force ssh://git@gitlab.zhujian.tech:7020/****/test.git master
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+```
+
+在网上找了很多资料，提出的解决方案是重新设置`ssh`公/私钥。当前我的问题不是这个，而是`.ssh/config`重新配置
+
+```
+Host <xxx/自定义gitlab地址>
+        Port xxx                                   ---------------> 这个是关键，默认为22，当前应该设置为7020
+        StrictHostKeyChecking no
+```
