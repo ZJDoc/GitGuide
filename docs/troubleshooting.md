@@ -510,11 +510,12 @@ fatal: 无法读取远程仓库。
 
 参考：[How to fix 'The project you were looking for could not be found' when using git clone](https://stackoverflow.com/questions/54571213/how-to-fix-the-project-you-were-looking-for-could-not-be-found-when-using-git)
 
-添加私钥
+可以使用命令`ssh-add -l`查看是否已加载私钥，我遇到一种情况就是可能存在私钥冲突（多个私钥已加载）的情况，所以，所以需要重启`ssh`缓存代理，再加入合适的私钥
 
 ```
+# 重启缓存代理
 eval "$(ssh-agent -s)"
-
+# 加入私钥
 ssh-add ~/.ssh/<id_rsa>
 ```
 
